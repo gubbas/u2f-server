@@ -225,7 +225,7 @@ fixtures.otpRemove = {
     {
       statusCode: 200,
       payload: {
-        data: 'Record removed.'
+        message: 'Record removed.'
       }
     },
     0,
