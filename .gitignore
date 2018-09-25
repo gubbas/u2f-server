@@ -18,4 +18,3 @@ ts-node
 coverage
 .nyc_output
 
-volumes/db
