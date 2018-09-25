@@ -1,7 +1,10 @@
 
 
 export interface ServerResponseSuccess {
-  data?: any
+  data?: any,
+  summary?: any,
+  challenges?: any,
+  message?: string
 }
 
 
