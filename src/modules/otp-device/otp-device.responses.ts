@@ -168,7 +168,9 @@ export class OTPResponseGenerator extends BaseResponseGenerator {
           if (recordsRemoved === 0) {
             return this.genServerResponse(this.genError('record', 'Record does not exist.'), 400)
           }
-          return this.genServerResponse({ data: 'Record removed.' }, 200)
+
+          const output: any = { message: 'Record removed.' }
+          return this.genServerResponse(output, 200)
         })
         .catch(err => {
           return this.genServerResponse(this.genError('database', err), 400)
